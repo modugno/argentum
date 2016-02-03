@@ -33,5 +33,9 @@ public final class Negociacao {
 	public double getVolume() {
 		return preco * quantidade;
 	}
+
+	public boolean isMesmoDia(Calendar outraData) {
+		return data.get(Calendar.DAY_OF_MONTH) == outraData.get(Calendar.DAY_OF_MONTH);
+	}
 	
 }
